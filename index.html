@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Interval Train</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="play-area">
+        <div id="cone-1" class="cone"></div>
+        <div id="cone-2" class="cone"></div>
+        <div id="cone-3" class="cone"></div>
+        <div id="cone-4" class="cone"></div>
+
+        <div class="center-panel">
+          <div id="initial-div" class="initial-div">
+            <div class="input-div">
+              <label for="time-input">Tiempo (s)</label>
+              <input type="number" min="0" max="60" id="time-input" />
+            </div>
+            <div class="input-div">
+              <label for="interval-input">Intervalo (s)</label>
+              <input type="number" min="1" max="60" id="interval-input" />
+            </div>
+            <button id="start-button" class="start-button">start</button>
+          </div>
+
+          <span id="start-countdown" class="start-countdown hide">3</span>
+
+          <div id="running-div" class="running-div hide">
+            <div id="timer-div" class="timer-div">
+              <span id="timer" class="timer"></span>
+            </div>
+            <button id="stop-button" class="stop-button">stop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
